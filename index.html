@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe-Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="msgContainer hide">
+        <p id="msg"></p> <br><br>
+        <button id="newgame"> New Game </button>
+    </div>
+    <main>
+        <br><br>
+        <div class="menu">
+            <button  id="colors" class="menu-buttons">
+                <svg  id="logo2" class="menu-items" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                    <rect width="24" height="24" fill="rgb(207, 156, 255)"/>
+                    <path d="M19.5483 17C20.7476 15.9645 21.5819 14.6272 22 13.1756C19.5473 13.4746 17.0369 12.3432 15.7234 10.1113C14.4099 7.87928 14.6664 5.1807 16.1567 3.2463C14.1701 2.75234 11.9929 2.98823 10.0779 4.07295C7.30713 5.64236 5.83056 8.56635 6.0155 11.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M2 15C5.5 18.5 11.5755 17 12.7324 15C12.9026 14.7058 13 14.3643 13 14C13 12.8954 12.1046 12 11 12C9.89543 12 9 12.8954 9 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M14.0001 20.9146C14.1565 20.9699 14.3248 21 14.5001 21C15.3285 21 16.0001 20.3284 16.0001 19.5C16.0001 18.6716 15.3285 18 14.5001 18C14.206 18 13.9317 18.0846 13.7002 18.2309C12.5505 19.0225 10.4209 20.0378 8 20.301M5 20.1936C4.33025 20.0635 3.6594 19.8541 3 19.5478" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M19 20.0003C19.2581 20.0003 19.9557 19.8804 21 19.4551" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+            </button>
+            <button id="solidBg" class="menu-buttons">
+                <svg id="logo1" class="menu-items"   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <rect width="24" height="24" fill="rgb(207, 156, 255)"/>
+                    <path d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C12.8417 22 14 22.1163 14 21C14 20.391 13.6832 19.9212 13.3686 19.4544C12.9082 18.7715 12.4523 18.0953 13 17C13.6667 15.6667 14.7778 15.6667 16.4815 15.6667C17.3334 15.6667 18.3334 15.6667 19.5 15.5C21.601 15.1999 22 13.9084 22 12Z" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M7 15.002L7.00868 14.9996" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="9.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
+                    <circle cx="16.5" cy="9.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+            </button>
+            <button id="bgImage" class="menu-buttons">
+                <svg id="logo3"  class="menu-items" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M7.07523 3.88403C10.2874 4.8348 13.7126 4.8348 16.9248 3.88403C19.517 3.11677 20.813 2.73313 21.4065 3.20921C22 3.68529 22 4.90772 22 7.35256V16.6474C22 19.0923 22 20.3147 21.4065 20.7908C20.813 21.2669 19.5169 20.8832 16.9248 20.116C13.7126 19.1652 10.2874 19.1652 7.07523 20.116C4.48305 20.8832 3.18696 21.2669 2.59348 20.7908C2 20.3147 2 19.0923 2 16.6474V7.35256C2 4.90772 2 3.68529 2.59348 3.20921C3.18696 2.73313 4.48305 3.11677 7.07523 3.88403Z" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M7 20C10.9469 15.8426 15.3824 10.3291 22 14.4643" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M9 8.5C9 9.32843 8.32843 10 7.5 10C6.67157 10 6 9.32843 6 8.5C6 7.67157 6.67157 7 7.5 7C8.32843 7 9 7.67157 9 8.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <!-- <button id="hash">#</button> -->
+        </div>
+        
+        <h1>Tic-Tac-Toe Game</h1>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+            <button id="reset" type="Reset">reset</button>
+        </div>
+        
+        
+        
+    </main>
+    <script src="event.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(207, 156, 255);;
+    text-align: center;
+}
+h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.3em;
+}
+.container{
+    height:70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:30px;
+   visibility: true;
+}
+.box{
+    height:16vmin;
+    width:16vmin;
+    border-radius: 6px;
+    border:none;
+    box-shadow: 0 0 1rem rgb(46, 117, 247, 0.5);
+    font-size: 8vmin;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:bisque;
+    color: black;
+}
+
+.game{
+    height:60vmin;
+    width:60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1.5vmin;
+}
+
+#reset{
+    height:7vmin;
+    width:14vmin;
+    border-radius: 20vmin;
+    border: none;
+    box-shadow: 0 0 1rem rgb(46, 117, 247, 0.7);
+    font-size: 1rem;
+    font-weight: bold;
+    margin:20px 20px 20px 20px;
+    background-color: bisque;
+}
+#newgame{
+    height:7vmin;
+    width:20vmin;
+    border-radius: 20vmin;
+    border: none;
+    box-shadow: 0 0 1rem rgb(46, 117, 247, 0.7);
+    font-size: 1rem;
+    font-weight: bold;
+    margin:10px;
+}
+#reset:hover, #newgame:hover{
+    box-shadow:0 0 1rem rgb(0, 66, 190) ;
+}
+
+#msg{
+    color:brown;
+    font-size: 5vmin;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.msgContainer{
+    height : 100vmin;
+    display: flex;
+    justify-content: Center;
+    align-items: Center;
+    flex-direction: column;
+}
+.hide{
+    display: none;
+}
+
+.menu{
+    width:50px;
+    float:left;
+    margin:20px 0px 20px 20px;
+    border:none;
+    display:flex;
+    flex-direction: column;
+    border:1px dashed black;
+    justify-content: center;
+    align-items: center;
+}
+.menu-buttons{
+    height:30px; width:30px;
+    padding:1px;
+    border:none;
+    margin:15px 15px 15px 15px;
+    background-color: rgb(207, 156, 255);;
+    border-radius: 6px;
+}
+/* .menu-buttons:hover{
+    border-radius: 5px;
+    box-shadow:inset 0 0 08px  rgb(174, 95, 248);
+} */
+
+/* Define styles for light mode */
+.light-mode {
+    background-color: rgb(207, 156, 255);
+    color: black;
+    -webkit-text-stroke-width: 0; /* Ensure stroke is removed */
+    -webkit-text-stroke-color: transparent; /* Ensure stroke is removed */
+    border: none; /* No border in light mode */
+}
+
+/* Define styles for dark mode */
+.dark-mode {
+    background-color: rgb(20, 19, 19);
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: red;
+}
+.dark-mode h1,
+.dark-mode #msg,
+.dark-mode #reset,
+.dark-mode #newgame{
+    color: white; /* Ensure these elements adopt the white color in dark mode */
+}
+.dark-mode #reset, #newgame{
+    background-color:  rgb(20, 19, 19);
+    border: 1px dashed red;
+    -webkit-text-stroke-width: 0.5px;
+}
+
+
+#hash{
+    background-color: inherit;
+    border: none;
+    font-size: 32px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*********************************************************************************/
+
